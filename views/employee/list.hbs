@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.salary}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<div class="form-group">
+    <button type="getEmployee" onclick="location.href = 'http://localhost:3000/employee/';" class="btn btn-info"><i class="fa fa-reply"></i> back</button>
+</div>
